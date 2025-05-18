@@ -7,6 +7,7 @@
 	<!-- SETUP -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 	<!-- link to JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<script src="./main.js"></script>
@@ -22,7 +23,7 @@
 <body>
 
 <!-- search bar -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm">
 	<div class="container-fluid">
 
 	<div class="collapse navbar-collapse" id="mynavbar">
@@ -30,14 +31,20 @@
 			<li class="nav-item active">
 				<a class="nav-link active" href="#home">Home</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#projects">Accomplishments</a>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle show active" role="button" data-bs-toggle="dropdown" aria-expanded="true">Accomplishments</a>
+					<ul class="dropdown-menu show active" data-bs-popper="static">
+						<li><a class="dropdown-item" href="#q1">Quarter 1</a></li>
+						<li><a class="dropdown-item" href="#q2">Quarter 2</a></li>
+						<li><a class="dropdown-item" href="#q3">Quarter 3</a></li>
+						<li><a class="dropdown-item" href="#q4">Quarter 4</a></li>
+					</ul>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#expectations">What's Next?</a>
+			<li class="nav-item active">
+				<a class="nav-link active" href="#expectations">What's Next?</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#forms">Feedback</a>
+			<li class="nav-item active">
+				<a class="nav-link active" href="#forms">Feedback</a>
 			</li>
 		</ul>
 
@@ -50,68 +57,70 @@
 	</div>
 </nav>
 
+<!-- Hero Page -->
 	<h2>9-Emerald Group 1 Portfolio</h2>
 	<h4>A.Y. 2024-2025 - Greenhills Campus</h4>
 
-<!-- HOME PAGE (Profile Information Section) -->
-<div class="row d-flex justify-content-center mb-3 mt-3" id="home">
-
-	<!-- Banaag -->
-	<div class="card mt-3 mb-3">
-		<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF STUDENT" alt="profile">
-		<div class="card-body mt-3 mb-3">
-			<h4 class="card-title">Kyla Limuelle Jonson Banaag</h4>
-			<h4><a href="https://kbanaag-9e.github.io/Q2EX2-Kyla-Banaag/">I am an academic student who was homeschooled for 6 years before studying at OBMC and a very skilled programmer.</a></h4>
-			<h6>(I did most of the coding for this portfolio.)</h6>
+<!-- HOME PAGE (website Information Section) -->
+<div class="container-fluid">
+	<div class="row d-flex justify-content-center mb-3 mt-3" id="home">
+	<h2 class="mt-3">Group Members</h2>
+		<!-- Banaag -->
+		<div class="card mt-3 mb-3">
+			<div class="card-body">
+				<h4 class="card-title"><a href="https://kbanaag-9e.github.io/Q2EX2-Kyla-Banaag/">Kyla Limuelle Jonson Banaag</a></h4>
+				<h4>I am an academic student who was homeschooled for 6 years before studying at OBMC and a very skilled programmer.</h4>
+				<h6>(I did most of the coding for this portfolio.)</h6>
+			</div>
 		</div>
-	</div>
 
-	<!-- Gozum -->
-	<div class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3">
-		<img class="card-img-top img-fluid" src="PICTURE OF STUDENT" alt="profile">
-		<div class="card-body mt-3 mb-3">
-			<h4 class="card-title">Ashley Rose Cuevas Gozum</h4>
-			<h4><a href="https://agozum-9e.github.io/Q2EX-1-Gozum-Ashley/">short description of yourself</a></h4>
+		<!-- Gozum -->
+		<div class="card mt-3 mb-3">
+			<div class="card-body">
+				<h4 class="card-title"><a href="https://agozum-9e.github.io/Q2EX-1-Gozum-Ashley/">Ashley Rose Cuevas Gozum</a></h4>
+				<h4>short description of yourself</h4>
+			</div>
 		</div>
-	</div>
 
-	<!-- Mamauag -->
-	<div class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3">
-		<img class="card-img-top img-fluid" src="PICTURE OF STUDENT" alt="profile">
-		<div class="card-body mt-3 mb-3">
-			<h4 class="card-title">James Micah Fresco Mamauag</h4>
-			<h4><a href="https://jmamauag-9e.github.io/Q2Ex2_Mamauag_James/">I am energetic and a funny guy. I like Plastic Toy Soldiers, video games (Minecraft and Roblox), and watch action movies and shows. I am also a youtuber.</a></h4>
+		<!-- Mamauag -->
+		<div class="card mt-3 mb-3">
+			<div class="card-body">
+				<h4 class="card-title"><a href="https://jmamauag-9e.github.io/Q2Ex2_Mamauag_James/">James Micah Fresco Mamauag</a></h4>
+				<h4>I am energetic and a funny guy. I like Plastic Toy Soldiers, video games (Minecraft and Roblox), and watch action movies and shows. I am also a youtuber.</h4>
+			</div>
 		</div>
-	</div>
 
-	<!-- Apostol -->
-	<div class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3">
-		<img class="card-img-top img-fluid" src="PICTURE OF STUDENT" alt="profile">
-		<div class="card-body mt-3 mb-3">
-			<h4 class="card-title">Caitlyn C. Apostol</h4><h4><a href=https://github.com/CApostol9E>Hi! I love to write stories and play games. I mostly play Roblox. My user is Withered_Bonnie20212, the account that I’m always using. I sometimes play with my cousins or friends, but mostly by myself. I watch YouTube videos like Minecraft players that are doing the 100 days challenge or some random videos that I find entertaining. Or listening to music while playing games when I’m waiting for money in the tycoon games. </a></h4>
+		<!-- Apostol -->
+		<div class="card mt-3 mb-3">
+			<div class="card-body">
+				<h4 class="card-title"><a href="https://capostol9e.github.io/2Q-Exercise1/">Caitlyn Cuyco Apostol</a></h4>
+				<h4>Hi! I love to write stories and play games. I mostly play Roblox. Sometimes with my cousins or friends, but mostly by myself.</h4>
+			</div>
 		</div>
-	</div>
 
-
-	<!-- Lozano -->
-	<div class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3">
-		<img class="card-img-top img-fluid" src="PICTURE OF STUDENT" alt="profile">
-		<div class="card-body mt-3 mb-3">
-			<h4 class="card-title">Maria Julie Ann Lozano</h4>
-			<h4><a href="Julia-Profile.html">short description of yourself</a></h4>
+		<!-- Lozano -->
+		<div class="card mt-3 mb-3">
+			<div class="card-body">
+				<h4 class="card-title"><a href="https://julialozanoo.github.io/Quarter-2-website/">Maria Julie Ann Lozano</a></h4>
+				<h4>I really love baking and cooking because of my mom. When I was young, I dreamed of becoming a chef one day. I also enjoy Biology, Math, and writing. My dream universities are UST and UP.</h4>
+			</div>
 		</div>
-	</div>
 
+	</div>
 </div>
 
 <!-- PROJECTS -->
 <div class="container-fluid mt-3 mb-3" id="projects">
+	<!-- <h3 class="mt-4">Projects/Accomplishments</h3> -->
 	<!-- QUARTER 1 -->
 	<div class="row d-flex justify-content-center mb-3 mt-3" id="q1">
+	<h2 class="mt-2">Projects/Accomplishments</h2>
+
+	<h3 class="mt-3">Quarter 1</h3>
 		<!-- Banaag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Banaag-Q1.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Kyla Limuelle J. Banaag</h4>
 				<h4><a href="https://kbanaag-9e.github.io/Q1Project-Kyla-Banaag/">GSale: Bluetooth Speaker Shop</a></h4>
 					<h5>A mock-up shopping webpage for some of the top bluetooth speakers.</h5>
@@ -120,8 +129,8 @@
 
 		<!-- Gozum -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Ashley Rose C. Gozum</h4>
 				<h4><a href="https://agozum-9e.github.io/GH-ICT9Emerald-Q1Project-Gozum-Ashley/">Ashe's Clothing</a></h4>
 					<h5>A 90's - Y2K inspired clothing brand, aiming to unleash your inner chicness.</h5>
@@ -130,8 +139,8 @@
 
 		<!-- Mamauag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Mamauag-Q1.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">James Micah F. Mamauag</h4>
 				<h4><a href="https://jmamauag-9e.github.io/Q1Project/">My Toy Soldier Shop!</a></h4>
 					<h5>My website is about shopping products. Mostly focusing on the product on army men toys.</h5>
@@ -140,33 +149,31 @@
 
 		<!-- Apostol -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src=alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Apostol-Q1.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Caitlyn C. Apostol</h4>
 				<h4><a href="https://capostol9e.github.io/Q1-Project./">Caitlyn's Bakery</a></h4>
 					<h5>My website is an online bakery where you can buy yummy food. There is a story to this bakery. You can see it right there after I said hi to all of you. There’s even a form where you can add anything that you want me to add to the bakery or to the website.</h5>
 			</div>
 		</div>
 
-
-		<!-- Lozano -->
+		<!-- Lozano-->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Lozano-Q1.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Maria Julie Ann Lozano</h4>
-				<h4><a href="">TITLE OF PROJECT</a></h4>
-					<h5>SHORT DESCRIPTION</h5>
+				<h4><a href="julialozanoo.github.io/Q1-Project/">Labubu Shop</a></h4>
+					<h5>This website is an online shop where you can buy authentic Labubu figures at a cheap price.</h5>
 			</div>
 		</div>
 
-	</div>
-
 	<!-- QUARTER 2 -->
 	<div class="row d-flex justify-content-center mb-3 mt-3" id="q2">
+	<h3 class="mt-3">Quarter 2</h3>
 		<!-- Banaag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Banaag-Q2.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Kyla Limuelle J. Banaag</h4>
 				<h4><a href="https://kbanaag-9e.github.io/Q2Project/">Pinoy Chomp: Recipe Website</a></h4>
 					<h5>A website consisting of 20 famous traditional Filipino food recipes from various recipe developers from the internet with digital handwritten drawings to represent each meal. I also consider this as my magnum opus for this school year.</h5>
@@ -175,8 +182,8 @@
 
 		<!-- Gozum -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Ashley Rose C. Gozum</h4>
 				<h4><a href="https://agozum-9e.github.io/Q2-PROJ-GOZUM/">Lola Ederlinda's</a></h4>
 					<h5>SHORT DESCRIPTION</h5>
@@ -185,8 +192,8 @@
 
 		<!-- Mamauag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Mamauag-Q2.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">James Micah F. Mamauag</h4>
 				<h4><a href="https://jmamauag-9e.github.io/Q2Project/index.html">Cooking Time!</a></h4>
 					<h5>This website is focused on showing Filipino food recipes.</h5>
@@ -195,21 +202,19 @@
 
 		<!-- Apostol -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src= alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Apostol-Q2.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Caitlyn C. Apostol</h4>
-				<h4><a href="">How to make homemade recipes</a></h4>
+				<h4><a href="https://capostol9e.github.io/GH_ICT9Emerald_Q2PROJ_Apostol_Caitlyn/">How to Make Homemade Recipes</a></h4>
 					<h5>This website is created for me to show you my own recipes and how to make them.</h5>
 			</div>
 		</div>
 
 		<!-- Lozano -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<div class="card-body">
 				<h4 class="card-title">Maria Julie Ann Lozano</h4>
-				<h4><a href="">TITLE OF PROJECT</a></h4>
-					<h5>SHORT DESCRIPTION</h5>
+				<h4>MISSING FILE</h4>
 			</div>
 		</div>
 
@@ -217,10 +222,11 @@
 
 	<!-- QUARTER 3 -->
 	<div class="row d-flex justify-content-center mb-3 mt-3" id="q3">
+	<h3 class="mt-3">Quarter 3</h3>
 		<!-- Banaag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Banaag-Q3.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Kyla Banaag</h4>
 				<h4><a href="https://kbanaag-9e.github.io/Q3Project/">LRT-2 Fare Guide</a></h4>
 					<h5>A joint project between me and Angela Bridget S. Lim to create an easily understood guide for those using the LRT, specifically line 2.</h5>
@@ -229,8 +235,8 @@
 
 		<!-- Lozano & Gozum -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Julia Lozano & Ashley Gozum</h4>
 				<h4><a href="https://agozum-9e.github.io/Q3-PROJ-COLLAB-LOZANO-GOZUM/">3Q ICT Project Collab</a></h4>
 					<h5>SHORT DESCRIPTION</h5>
@@ -239,8 +245,8 @@
 
 		<!-- Mamauag & Apostol -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="JM&CA-Q3.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">James Mamauag & Caitlyn Apostol</h4>
 				<h4><a href="https://capostol9e.github.io/3QProject/">Train Fare Guide</a></h4>
 					<h5>This website is made by me and Caitlyn. We made a train ticketing center for LRT 2.</h5>
@@ -251,10 +257,11 @@
 
 	<!-- QUARTER 4 (using Quiz 1) -->
 	<div class="row d-flex justify-content-center mb-3 mt-3" id="q4">
+	<h3 class="mt-3">Quarter 4</h3>
 		<!-- Banaag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Banaag-Q4.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Kyla Limuelle J. Banaag</h4>
 				<h4><a href="https://kbanaag-9e.github.io/Q4Quiz1/">BMI Scale Calculator (Metric and Imperial System)</a></h4>
 					<h5>A webpage with a guide on how to calculate for your BMI, a Metric/Standard system converter, and an Imperial/English system converter.</h5>
@@ -263,8 +270,8 @@
 
 		<!-- Gozum -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Ashley Rose C. Gozum</h4>
 				<h4><a href="https://agozum-9e.github.io/Q4-Q1/">Q4 Q1: BMI Calculator</a></h4>
 					<h5>SHORT DESCRIPTION</h5>
@@ -273,8 +280,8 @@
 
 		<!-- Mamauag -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Mamauag-Q4.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">James Micah F. Mamauag</h4>
 				<h4><a href="https://jmamauag-9e.github.io/Q4-QUIZ1/">Q4 Quiz 1: BMI Calculator</a></h4>
 					<h5>This website is about calculating the BMI if you are obese or not.</h5>
@@ -283,26 +290,26 @@
 
 		<!-- Apostol -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src= alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Apostol-Q4.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Caitlyn C. Apostol</h4>
-				<h4><a href="">QUIZ 1</a></h4>
-					<h5>This website can calculate what your BMI is.
-</h5>
+				<h4><a href="https://capostol9e.github.io/4Q-Quiz1/">BMI Calculator</a></h4>
+					<h5>This website can calculate what your BMI is.</h5>
 			</div>
 		</div>
 
 		<!-- Lozano -->
 		<div class="card mt-3 mb-3">
-			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="PICTURE OF WEBSITE" alt="profile">
-			<div class="card-body mt-3 mb-3">
+			<img class="card-img-top img-thumbnail mx-auto d-block img-fluid mt-3 mb-3" src="Lozano-Q4.png" alt="website">
+			<div class="card-body">
 				<h4 class="card-title">Maria Julie Ann Lozano</h4>
-				<h4><a href="https://julialozanoo.github.io/Q4-Quiz-1/">Q4 Quiz 1: BMI Calculator</a></h4>
-					<h5>SHORT DESCRIPTION</h5>
+				<h4><a href="https://julialozanoo.github.io/Q4-Quiz-1/">QUIZ 1</a></h4>
+					<h5>This website is for you to calculate your BMI</h5>
 			</div>
 		</div>
 
 	</div>
+</div>
 </div>
 
 <!-- What's Next? -->
@@ -316,59 +323,110 @@
 
 		<div class="text-start col-md-8 mt-3">
 			<!-- Banaag -->
-			<h5>Kyla Limuelle Jonson Banaag</h5>
-			<h4>"I hope to be able to create more interactive websites and applications by applying Python. I also expect to grow into a better programmer and debugger to help others in learning how to program."</h4>
+			<h4>Kyla Limuelle Jonson Banaag</h4>
+			<h5>"I hope to be able to create more interactive websites and applications by applying Python. I also expect to grow into a better programmer and debugger to help others in learning how to program."</h5>
 
 			<!-- Gozum -->
-			<h5>Ashley Rose Cuevas Gozum</h5>
-			<h4>"I expect that ICT 10 will be more challenging, yet fun. I hope that I will learn more things about coding that would make me more into it."</h4>
+			<h4>Ashley Rose Cuevas Gozum</h4>
+			<h5>"I expect that ICT 10 will be more challenging, yet fun. I hope that I will learn more things about coding that would make me more into it."</h5>
 
 			<!-- Mamauag -->
-			<h5>James Micah Fresco Mamauag</h5>
-			<h4>"I wanted programming to be easier, so that I can learn how to code better. I also expect that there should also be topics about photo editing and video making (the graphics, animations, and designs), because some students want to become content creators like me and animators too."</h4>
+			<h4>James Micah Fresco Mamauag</h4>
+			<h5>"I wanted programming to be easier, so that I can learn how to code better. I also expect that there should also be topics about website editing and video making (the graphics, animations, and designs), because some students want to become content creators like me and animators too."</h5>
 
 			<!-- Apostol -->
-			<h5>Caitlyn Cuyco Apostol</h5>
-			<h4>"Maybe learn how to make some basic code for games that is easy to make. Learn how to cite AI like ChatGPT. Possibly make a website that will help teach kids how to code."</h4>
+			<h4>Caitlyn Cuyco Apostol</h4>
+			<h5>"Maybe learn how to make some basic code for games that is easy to make. Learn how to cite AI like ChatGPT. Possibly make a website that will help teach kids how to code."</h5>
 
 			<!-- Lozano -->
-			<h5>Maria Julie Ann Lozano</h5>
-			<h4>"I expect that next year will be more stressful, but I hope to learn more about coding so that my tuition won’t go to waste hehehe."</h4>
+			<h4>Maria Julie Ann Lozano</h4>
+			<h5>"I expect that next year will be more stressful, but I hope to learn more about coding so that my tuition won’t go to waste hehehe."</h5>
 		</div>
 		
 	</div>
 </div>
 
 <!-- Feedback -->
-<div class="container-fluid mt-3 mb-3" id="forms">
+<div class="container-fluid" id="forms">
+    <h3 class="mt-3 mb-3">Feedback Forms</h3>
+
+    <div>
+      <h5>1. How is our portfolio overall?</h5>
+		<div class="stars star-question1">
+			<i class='bx bxs-star' onclick="rate('question1', 1)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question1', 2)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question1', 3)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question1', 4)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question1', 5)" id=""></i>
+		</div>
+    </div>
+
+    <div>
+		<h5>2. Was the information presented in this portfolio clear and helpful?</h5>
+		<div class="stars star-question2">
+			<i class='bx bxs-star' onclick="rate('question2', 1)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question2', 2)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question2', 3)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question2', 4)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question2', 5)" id=""></i>
+		</div>
+    </div>
+
 	<div>
-		
+		<h5>3. How is the design and layout of this portfolio?</h5>
+		<div class="stars star-question3">
+			<i class='bx bxs-star' onclick="rate('question3', 1)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question3', 2)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question3', 3)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question3', 4)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question3', 5)" id=""></i>
+		</div>
 	</div>
+
+	<div>
+		<h5>4. How are the projects featured this portfolio?</h5>
+		<div class="stars star-question3">
+			<i class='bx bxs-star' onclick="rate('question4', 1)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question4', 2)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question4', 3)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question4', 4)" id=""></i>
+			<i class='bx bxs-star' onclick="rate('question4', 5)" id=""></i>
+		</div>
+	</div>
+
+	<div class="mt-3 mb-3">
+		<form>
+			<textarea id="form-control" placeholder="How could we improve this portfolio?" rows="3" cols="50"></textarea>
+			<br>
+			<button class="btn btn-success mb-3" onclick="submitForm()">Submit</button>
+		</form>
+	</div>
+
 </div>
 
 <!-- References -->
-<div class="container-fluid mt-3 mb-3" id="">
+<div class="container-fluid mt-3 mb-3">
 	<div>
-		
+		<h4>References</h4>
+		<!-- We have no ties to Fairview 9 Topaz, this was just found as a reference in Github -->
+		<h5><a href="https://github.com/FilAyala/Fairview_ICT9Topaz_Q4Project_Group2/tree/main">ICT Quarter 4 Group 2 9-T</a></h5>
 	</div>
 </div>
 
 <!-- Footer -->
-<div class="container-fluid mt-3 mb-3">
+<div class="container-fluid mb-3">
 	<div class="row">
 
 		<!-- school, campus, academic year -->
-		<div class="col-md-2 mt-4">
+		<div class="col-md-4 mt-1">
 			<h4>Our Campus</h4>
 				<h5>Operation Brotherhood Montessori Center - Inc.</h5>
 				<h5>3 Eisenhower Street</h5>
 				<h5>Greenhills, San Juan City, 1503</h5>
-			<br>
-			<h4>A.Y. 2024-2025</h4>
 		</div>
 
 		<!-- group mates -->
-		<div class="text-start col-md-6 mt-3">
+		<div class="col-md-4 mt-1">
 			<h4>Our Group Members</h4>
 				<h5>Kyla Limuelle Jonson Banaag</h5>
 				<h5>Ashley Rose Cuevas Gozum</h5>
@@ -378,10 +436,10 @@
 		</div>
 
 		<!-- fake socials -->
-		<div class="text-start col-md-8 mt-3">
+		<div class="col-md-4 mt-1">
+			<h4>A.Y. 2024-2025</h4>
 			<h4>Our Section</h4>
 				<h5>9-Emerald</h5>
-			<br>
 			<h4>Our Socials</h4>
 				<h5></h5>
 				<h5></h5>
