@@ -7,7 +7,7 @@ function question1(clickedId) {
     for (let i = 1; i <= 5; i++) {
         const star = document.getElementById(i + 'star-A');
         if (i <= clickedStar) {
-            star.style.color = "orange";
+            star.style.color = "yellow";
         } else {
             star.style.color = "black";
         }
@@ -21,7 +21,7 @@ function question2(clickedId) {
     for (let i = 1; i <= 5; i++) {
         const star = document.getElementById(i + 'star-B');
         if (i <= clickedStar) {
-            star.style.color = "orange";
+            star.style.color = "yellow";
         } else {
             star.style.color = "black";
         }
@@ -35,7 +35,7 @@ function question3(clickedId) {
     for (let i = 1; i <= 5; i++) {
         const star = document.getElementById(i + 'star-C');
         if (i <= clickedStar) {
-            star.style.color = "orange";
+            star.style.color = "yellow";
         } else {
             star.style.color = "black";
         }
@@ -49,7 +49,7 @@ function question4(clickedId) {
     for (let i = 1; i <= 5; i++) {
         const star = document.getElementById(i + 'star-D');
         if (i <= clickedStar) {
-            star.style.color = "orange";
+            star.style.color = "yellow";
         } else {
             star.style.color = "black";
         }
