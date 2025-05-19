@@ -4,7 +4,7 @@ body {
 	text-align: center;
 }
 
-div {
+.container-fluid {
 	background-color: #87BBA2;
 	border-radius: 10px;
 }
@@ -21,4 +21,12 @@ a {
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 10px;
+}
+
+.fa-star {
+	font-size: 24px;
+	color: black;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
