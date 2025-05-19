@@ -1,5 +1,3 @@
-// all programmed with the assistance of ChatGPT
-
 // 1. How is our portfolio overall?
 function question1(clickedId) {
     const clickedStar = parseInt(clickedId.charAt(0)); // Get the number from id like '1star-A' → 1
