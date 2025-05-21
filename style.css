@@ -13,6 +13,10 @@ a {
 	color: #3B6064;
 }
 
+details {
+	font-size: 24px;
+}
+
 .card {
 	display: inline-block;
 	width: 17vw;
